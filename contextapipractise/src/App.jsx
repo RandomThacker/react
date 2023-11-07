@@ -9,16 +9,21 @@ import C1 from './C1'
 // Create, provider, consumer
 
 const data = createContext()
+const data1 = createContext()
 
 function App() {
-  const name = "hello"  
+  const name = "billo" 
+  const caste = "dalit" 
   return (
     <>
-    <data.Provider>
+    <data.Provider value={name}>
+      <data1.Provider value={caste}>
       <C1/>
+      </data1.Provider>
     </data.Provider>
     </>
   )
 }
 
-export default App
+export default App;
+export {data,data1}
