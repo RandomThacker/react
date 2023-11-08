@@ -7,7 +7,7 @@ function Profile() {
         return <h1>Log in...</h1>
     }
     else
-        return <h1> Welcome {user.username}</h1>
+        return <h1> Welcome {user.username} and password {user.password}</h1>
 }
 
 export default Profile;
